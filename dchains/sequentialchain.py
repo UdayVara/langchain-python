@@ -30,3 +30,7 @@ while True:
     
     response = chain.invoke({"topic": user_input})
     print(f"AI: {response}")
+    # To visualize the chain structure, you can use the `get_graph()` method to print an ASCII representation of the chain. This can help you understand how the different components are connected and how data flows through the chain.
+    chain.get_graph().print_ascii()
+
+
