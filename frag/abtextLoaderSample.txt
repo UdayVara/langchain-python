@@ -1,0 +1,64 @@
+System: Online Food Ordering Platform
+
+Description:
+This platform allows users to browse restaurants, view menus, place orders, and track deliveries in real-time. It supports multiple payment methods and offers discounts through coupon codes.
+
+Modules:
+
+1. User Module:
+
+   * Register/Login
+   * Manage profile
+   * View order history
+
+2. Restaurant Module:
+
+   * Add/Edit menu items
+   * Manage availability
+   * View incoming orders
+
+3. Order Module:
+
+   * Place order
+   * Apply coupons
+   * Track delivery status
+
+4. Delivery Module:
+
+   * Assign delivery partner
+   * Update delivery status
+   * Estimated delivery time
+
+Tech Stack:
+
+* Frontend: React.js
+* Backend: NestJS
+* Database: PostgreSQL
+* Payment Gateway: Stripe API
+
+Sample Records:
+Order ID: 5012
+User: Amit Patel
+Items: Pizza, Coke
+Total Amount: ₹450
+Payment Status: Completed
+Delivery Status: Delivered
+
+Order ID: 5013
+User: Neha Shah
+Items: Burger
+Total Amount: ₹150
+Payment Status: Pending
+Delivery Status: Preparing
+
+Business Rules:
+
+* Orders above ₹300 get free delivery.
+* Coupons can only be applied once per order.
+* If payment fails, the order is not confirmed.
+
+Edge Case:
+Some users try to apply multiple coupons, which should be rejected.
+
+Additional Notes:
+The system should handle at least 10,000 concurrent users without performance degradation.
