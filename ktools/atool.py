@@ -9,3 +9,10 @@ load_dotenv()
 def multiply(a: int, b: int) -> int:
     """Multiplies two numbers"""
     return a * b
+
+
+
+# call tool
+result = multiply.invoke({"a": 2, "b": 3})
+
+print(result)  # Output: 6
